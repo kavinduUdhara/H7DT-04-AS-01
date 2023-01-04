@@ -24,6 +24,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition-duration: 1s;
 }
 
 .sign-in-pannel{
@@ -42,6 +43,7 @@ body{
     padding-top: 30px;
     margin-top:50px;
     margin-bottom: 20px;
+    transition-duration: 1s;
 }
 
 .sign-in-pannel .method{
@@ -154,4 +156,66 @@ body{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+@media (max-width:1500px) {
+    .left{
+        width: 60%;
+    }
+
+    .sign-in-pannel{
+        background-color: rgba(240, 248, 255, 0.648);
+    }
+}
+
+@media (max-width:1200px) {
+    .left{
+        width: 70%;
+    }
+}
+
+@media (max-width:950px) {
+    .left{
+        width: 85%;
+    }
+}
+
+@media (max-width:750px) {
+    .left{
+        width: 95%;
+    }
+}
+
+@media (max-width:600px) {
+    .left{
+        width: 100%;
+    }
+
+    .sign-in-pannel{
+        width: 70%;
+    }
+}
+
+@media (max-width:500px) {
+    .left{
+        width: 100%;
+    }
+
+    .sign-in-pannel{
+        width: 80%;
+    }
+}
+
+@media (max-width:450px) {
+    .sign-in-pannel{
+        width: 95%;
+    }
+}
+
+@media (max-width:290px) {
+    .sign-in-pannel{
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+    }
 }
