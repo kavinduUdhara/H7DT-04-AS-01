@@ -2,13 +2,116 @@
     --normal-txt: 'Sans-serif', Arial;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-image: url('../images/background_image_with_3d_shapes_blue_purple.png');
+    background-image: url('../images/background_image_with_3d_shapes_blue_purple_website_ui__fe921b65-b2d1-498d-889e-423425ef6635.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--normal-txt);
+}
+
+.dashbord {
+    width: 50%;
+    height: 70vh;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.316);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.dashbord .title {
+    background-color: rgba(64, 21, 85, 0.623);
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(30px);
+    color: white;
+    
+}
+
+.dashbord .content {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.action{
+    margin-top: 10px;
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+.dashbord .content input,select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.dashbord .content button {
+    width: fit-content;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+    border: 3px solid rgb(49, 8, 56);
+    background-color: rgb(255, 255, 255);
+    color: rgb(49, 8, 56);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.dashbord .content button:hover {
+    border: 3px solid rgba(49, 8, 56, 0);
+    background-color: rgb(49, 8, 56);
+    color: rgb(255, 255, 255);
+}
+
+.dashbord .title {}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-bottom-left-radius: var(--dashbord-border-radius);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    transition-duration: 2s;
+}
+
+::-webkit-scrollbar-track:hover {}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    transition-duration: 2s;
+    background-color: rgb(171, 171, 171);
+    border-radius: 5px;
+    background-clip: padding-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
