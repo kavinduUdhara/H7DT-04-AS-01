@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to sign-in page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Welcome to sign-in page | New tech</title>
 </head>
 <body>
-    body
+    <div class="left">
+        <div class="sign-in-pannel">
+            <!--<h1>Welcome to the <label class="s-1">'New </label><label class="s-2">tech'</label></h1>-->
+            <div class="method">
+                <div class="option selected">log-in</div>
+                <div class="option">sign-up</div>
+            </div>
+            <div class="process-dis">
+                <div class="input-field">
+                    <div class="login-info">
+                        <input type="email" id="email" placeholder="e - mail">
+                        <input type="password" id="pwd" placeholder="password">
+                    </div>
+                </div>
+            </div>
+            <div class="action">
+                <button onclick="action('log-in')">log-in</button>
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
