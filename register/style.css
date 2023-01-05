@@ -10,7 +10,8 @@ body {
     background-image: url('../images/background_image_with_3d_shapes_blue_purple_website_ui__fe921b65-b2d1-498d-889e-423425ef6635.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +67,7 @@ body {
     border-radius: 20px;
     border: none;
     outline: none;
+    transition-duration: 1s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
@@ -114,4 +116,54 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+@media (max-width:1300px) {
+    .dashbord{
+        width: 70%;
+    }
+}
+
+@media (max-width:1000px) {
+    .dashbord{
+        width: 80%;
+    }
+}
+
+@media (max-width:750px) {
+    .dashbord{
+        width: 80%;
+    }
+
+    .dashbord .content input,select {
+        width: 80%;
+    }
+}
+
+@media (max-width:600px) {
+    .dashbord{
+        width: 90%;
+    }
+
+    .dashbord .content input,select {
+        width: 80%;
+    }
+}
+
+@media (max-width:500px) {
+    .dashbord{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .dashbord .content input,select {
+        width: 80%;
+    }
+}
+
+@media (max-width:500px) {
+
+    .dashbord .content input,select {
+        width: 90%;
+    }
 }
