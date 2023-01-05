@@ -157,13 +157,6 @@ body {
     }
 
     .dashbord .content input,select {
-        width: 80%;
-    }
-}
-
-@media (max-width:500px) {
-
-    .dashbord .content input,select {
         width: 90%;
     }
 }
