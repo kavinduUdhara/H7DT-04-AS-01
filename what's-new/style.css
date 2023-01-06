@@ -1,0 +1,230 @@
+:root {
+    --normal-txt: 'Sans-serif', Arial;
+    --menu-bar-itme-color: rgb(232, 232, 232);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--normal-txt);
+}
+
+.menu-bar-holder{
+    height: 100vh;
+    width: 0px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    z-index: 0;
+}
+
+.sub-menu-bar{
+    background-color: #ffffff66;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    padding: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    backdrop-filter: blur(20px);
+    z-index: 10;
+
+}
+
+.sub-menu-bar .menu-item{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.sub-menu-bar .menu-item:nth-child(1){
+    background-color: rgba(221, 221, 221, 0.3);
+}
+
+.sub-menu-bar .menu-item img{
+    width: 70%;
+}
+
+.sub-menu-bar .menu-item:hover{
+    background-color: rgba(234, 234, 234, 0.414);
+}
+
+.sub-menu-bar-item-names{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+.sub-menu-bar-item-names .menu-item{
+    width: fit-content;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff66;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    backdrop-filter: blur(20px);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+    transform: translateX(-70px);
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+
+/*https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered*/
+body:has(.sub-menu-bar .menu-item:hover) .sub-menu-bar-item-names .menu-item {
+    opacity: 1;
+    transform: translateX(0px);
+    z-index: 6;
+  }
+
+.main-body{
+    min-height: 80vh;
+    background-image: url('../images/background-images/background_image_with_3d_shapes_blue_purple_website_u_0d77a8be-0a48-4482-aee1-950cdc9f2c16.png');
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 60px 60px;
+}
+
+.main-body .main-body-title{
+    width: 50%;
+    display: flex;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.449);
+    border-radius: 5px 60px 5px 60px;
+    backdrop-filter: blur(20px);
+    padding: 30px;
+}
+
+.main-body .main-body-title img{
+    width: 100px;
+}
+
+.main-body .main-body-title h1{
+    width: 100%;
+    text-align: center;
+}
+
+.data-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.item-list{
+    width: 80%;
+    display: grid;
+    gap: 0 20px;
+    grid-template-columns: auto auto;
+}
+
+.item-list .item{
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto auto auto auto;
+    background-color: rgb(216, 216, 216);
+    grid-auto-flow: column;
+    row-gap: -1px;
+    column-gap: 10px;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.item-list .item:hover .item-image img{
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+.item-list .item .item-image{
+    grid-column: 1;
+    grid-row: 1 / 5;
+    overflow: hidden;
+}
+
+.item-list .item .item-image img{
+    width: 300px;
+    height: 300px;
+    transition-duration: 1s;
+}
+
+.item-list .item .item-name{
+    font-size: 20px;
+}   
+
+.item-list .item .item-dis{
+    padding-right: 10px;
+}
+
+.item-list .item .action{
+    position: relative;
+    z-index: 5;
+}
+
+.item-list .item .action .title{
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    background-color: #ffffff37;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    border-radius: 10px;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+    z-index: 6;
+}
+
+.item-list .item .action button:nth-child(2):hover + .title {
+    opacity: 1;
+    transform: translateY(0px);
+    z-index: 6;
+}
+
+.item-list .item .action button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border: 3px solid rgb(49, 8, 56);
+    background-color: rgba(255, 255, 255, 0.232);
+    color: rgb(49, 8, 56);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.item-list .item .action img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
