@@ -1,0 +1,69 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .holder{
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(230, 230, 230, 0.274);
+    border-radius: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+
+.footer .holder .grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.footer .holder div{
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .holder .s-media_other{
+    display: flex;
+    width: 100%;
+}
+
+.footer .holder .s-media_other .s-media{
+    display: inline-flex;
+}
+
+.footer .holder .s-media_other .s-media img{
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer .holder .s-media_other .other{
+    width: 300px;
+    display: inline-flex;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.title img{
+    width: 40px;
+    margin-top: 0px;
+    margin-right: 15px;
+}
+
+.title h1{
+    font-size: 40px;
+    margin-top:30px;
+    color: rgb(29, 18, 79);
+}

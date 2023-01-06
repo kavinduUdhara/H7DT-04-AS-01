@@ -1,0 +1,29 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.move-to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    border: none;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.325);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity:0;
+    transition-duration: 1s;
+}
+
+.move-to-top img{
+    width: 30px;
+    height: 30px;
+}

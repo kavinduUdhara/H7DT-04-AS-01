@@ -1,0 +1,102 @@
+.placeholder{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fill, minmax(var(--item-width), 1fr));
+    /*https://github.com/w3c/csswg-drafts/issues/1943*/
+    grid-template-rows: auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    place-items: center;
+    margin-bottom: 100px;
+}
+/*
+.item:nth-child(2n){
+    visibility: hidden;
+}*/
+
+:root{
+    --item-width: 230px;
+}
+
+.placeholder .item{
+    width: min-content;
+    width: var(--item-width);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.placeholder .item .item-image{
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.placeholder .item img{
+    width: var(--item-width);
+    /*transform-origin: 0 0;*/
+    transition: transform .5s ease;
+    /*image zoom - https://w3bits.com/css-image-hover-zoom/*/
+}
+
+.placeholder .item:hover .item-image img{
+    transform: scale(1.2);
+}
+
+.placeholder .item .item-name{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.placeholder .item .item-price{
+    margin-bottom: 10px;
+}
+
+.placeholder .item .action button{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.placeholder .item button {
+    width: fit-content;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border: 3px solid rgb(49, 8, 56);
+    background-color: rgba(255, 255, 255, 0.232);
+    color: rgb(49, 8, 56);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.placeholder .item .action img{
+    width: 30px;
+    height: 30px;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+}
+
+.placeholder .item button:hover {
+    border: 3px solid rgba(49, 8, 56, 0);
+    background-color: rgb(49, 8, 56);
+    color: rgb(255, 255, 255);
+}
+
+.placeholder .item button:hover img{
+    content: url('../images/svg/cart-outline-white.svg');
+}
+
+.placeholder::-webkit-scrollbar {
+    width: 2px;
+}
+
+.placeholder::-webkit-scrollbar-thumb {
+    width: 2px;
+    background: #296d98;
+    border-radius: 3px;
+}
