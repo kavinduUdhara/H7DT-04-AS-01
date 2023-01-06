@@ -22,6 +22,32 @@ body {
     font-family: var(--normal-txt);
 }
 
+.move-to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    border: none;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.325);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity:0;
+    transition-duration: 1s;
+}
+
+.move-to-top img{
+    width: 30px;
+    height: 30px;
+}
+
 .menu {
     background-color: #ffffff66;
     backdrop-filter: blur(20px);
@@ -234,7 +260,8 @@ img {
     border-radius: 50%;
     user-select: none;
     backdrop-filter: blur(5px);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
 .prev{
@@ -583,6 +610,55 @@ img {
     border: 3px solid rgba(49, 8, 56, 0);
     background-color: rgb(49, 8, 56);
     color: rgb(255, 255, 255);
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .holder{
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(230, 230, 230, 0.274);
+    border-radius: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+
+.footer .holder .grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.footer .holder div{
+    padding: 10px;
+    text-align: center;
+}
+
+.footer .holder .s-media_other{
+    display: flex;
+    width: 100%;
+}
+
+.footer .holder .s-media_other .s-media{
+    display: inline-flex;
+}
+
+.footer .holder .s-media_other .s-media img{
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer .holder .s-media_other .other{
+    width: 300px;
+    display: inline-flex;
 }
 
 
