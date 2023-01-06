@@ -2,7 +2,7 @@
 DESIGN A STATIC WEBSITE USING HTML AND CSS (THIS ASSIGNMENT IS INTENDED TO CHECKTHE KNOWLEDGE OF HTML AND CSS)
 
 
-## Web Programming 01 – Design an e-commerce web application
+### Web Programming 01 – Design an e-commerce web application
 **“New Tech”** is a company that buys and sells quality **electronic items**. At present they are using
 a customer care service to order items over the phone. At the Annual General Meeting of New
 Tech held on the 20th January 2022, they have decided to develop a Web Application to expand
