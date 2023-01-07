@@ -24,6 +24,7 @@
 
 .footer .holder div{
     padding: 10px;
+    padding-left: 0px;
     text-align: center;
 }
 
@@ -66,4 +67,25 @@
     font-size: 40px;
     margin-top:30px;
     color: rgb(29, 18, 79);
+}
+
+@media (max-width:510px) {
+    
+    .footer .holder .s-media_other .other{
+        width: 100%;
+        display: inline-flex;
+    }
+
+    .footer .holder .s-media_other{
+        display: block;
+        width: 100%;
+    }
+    .copyright{
+        display: none;
+    }
+
+    .footer .holder .grid{
+        display: flex;
+        flex-direction: column;
+    }
 }
