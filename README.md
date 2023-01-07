@@ -4,6 +4,8 @@ DESIGN A STATIC WEBSITE USING HTML AND CSS (THIS ASSIGNMENT IS INTENDED TO CHECK
 ## All Rights Reserved
 Copyright (c) 2023 KavinduUdhara. **All Rights Reserved**.
 
+copyright? copy right: steal ideas, steal facts but **do not steal my codes** :) 
+
 ### Web Programming 01 – Design an e-commerce web application
 **“New Tech”** is a company that buys and sells quality **electronic items**. At present they are using
 a customer care service to order items over the phone. At the Annual General Meeting of New
