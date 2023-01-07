@@ -35,3 +35,7 @@ sliders when you design the above-mentioned pages
 - Do not use templates for your design. You have to make the design by yourself.
 - You can add more pagesfor the design if you want.
 - Students do not need to program for the backend process. Only the design is required.
+
+## All Rights Reserved
+
+Copyright (c) 2023 KavinduUdhara. All Rights Reserved.
