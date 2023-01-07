@@ -36,6 +36,7 @@ sliders when you design the above-mentioned pages
 - You can add more pagesfor the design if you want.
 - Students do not need to program for the backend process. Only the design is required.
 
+
 ## All Rights Reserved
 
 Copyright (c) 2023 KavinduUdhara. All Rights Reserved.
