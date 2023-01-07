@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     margin-left: 5px;
-    z-index: 5;
+    z-index: 2;
 }
 
 .sub-menu-bar{
@@ -19,8 +19,7 @@
     border-radius: 10px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
     backdrop-filter: blur(20px);
-    z-index: 10;
-
+    z-index: 2;
 }
 
 .sub-menu-bar .menu-item{
@@ -72,16 +71,30 @@
     border-radius: 10px;
     cursor: pointer;
     transition-duration: 1s;
-    transform: translateX(-110px);
+    transform: translateX(-300px);
     opacity: 0;
-    transition-delay: 0.5s;
+    transition-delay: 0.1s;
+    visibility: hidden;
+    display: block;
+    z-index: 0;
+}
+
+@keyframes fadeIn {
+    from {
+         opacity: 0;
+    }
+
+    to {
+         opacity: 1;
+         visibility: visible;
+         transform: translateX(0px);
+    }
 }
 
 /*https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered*/
 body:has(.sub-menu-bar .menu-item:hover) .sub-menu-bar-item-names .menu-item {
-    opacity: 1;
-    transform: translateX(0px);
-    z-index: 6;
+    display: flex;
+    animation: fadeIn 1s;
   }
 
 
