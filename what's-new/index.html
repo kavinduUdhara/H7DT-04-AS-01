@@ -20,21 +20,29 @@
     <button class="move-to-top" onclick="topFunction()" id="myBtn" title="Go to top">
         <img src="../images/svg/chevron-up-outline.svg" alt="move to top">
     </button>
+    <div class="top-sub-search-bar">
+        <div class="search-bar">
+            <div class="input-f">
+                <input type="text" placeholder="search by keyword">
+            </div>
+            <div class="search-icon">
+                <img src="../images/svg/search-outline.svg" alt="search-outline">
+            </div>
+        </div>
+    </div>
     <div class="menu-bar-holder">
         <div class="sub-menu-bar">
             <div class="menu-item" onclick="window.location.href='../'">
                 <img src="../images/logo-hero.png" alt="">
             </div>
-            <div class="menu-item" onclick="topFunction()">
+            <!--
+            <div class="menu-item go-top-menu" onclick="topFunction()" id="">
                 <img src="../images/svg/extension-puzzle-outline.svg" alt="">
-            </div>
+            </div>-->
             <div class="menu-item">
                 <img src="../images/svg/apps-outline.svg" alt="">
             </div>
             <hr width="100%" color="black">
-            <div class="menu-item">
-                <img src="../images/svg/search-outline.svg" alt="">
-            </div>
             <div class="menu-item">
                 <img src="../images/svg/cart-outline.svg" alt="">
             </div>
@@ -44,10 +52,9 @@
         </div>
         <div class="sub-menu-bar-item-names">
             <div class="menu-item">Home page</div>
-            <div class="menu-item">go to the top</div>
+            <!--<div class="menu-item go-top-menu" id="">go to the top</div>-->
             <div class="menu-item">catogories</div>
             <hr width="0" color="white" style="opacity: 0; visibility: hidden;">
-            <div class="menu-item">search</div>
             <div class="menu-item">cart</div>
             <div class="menu-item">log-in</div>
         </div>
@@ -58,7 +65,8 @@
             <h1>What's new</h1>
         </div>
     </div>
-    <div class="chosse_list-or-grid-view">
+    <div class="chosse_list-or-grid-view" style="display: none;">
+        <!--https://stackoverflow.com/questions/31178653/how-to-keep-active-css-style-after-click-a-button-->
         chosse_list-or-grid-view-to-be-continue
     </div>
     <div class="data-holder">
@@ -75,7 +83,7 @@
                         <img src="../images/svg/cart-outline.svg" alt="">
                         add to cart
                     </button>
-                    <button>
+                    <button onclick="window.location.href='../product/smart-phone-05CD145940/'">
                         <img src="../images/svg/open-outline.svg" alt="">
                     </button>
                     <div class="title">view more details</div>
@@ -89,7 +97,7 @@
                 <div class="item-dis">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
                 <div class="item-price">$50,000</div>
                 <div class="action">
-                    <button>
+                    <button onclick="window.location.href='../'">
                         <img src="../images/svg/cart-outline.svg" alt="">
                         add to cart
                     </button>
@@ -190,6 +198,17 @@
                 <div class="other">Terms & conditions</div>
             </div>
         </div>
+        <div class="copyright" style="text-align: center; position: fixed;bottom: 0px; background-color: rgba(255, 255, 255, 0.482); padding: 5px; border-radius: 5px 5px 0 0;backdrop-filter: blur(20px);">
+            copyright? copy right: steal ideas, steal facts but do not steal my codes :) 
+            <br> © Kavindu Udhara 2023 | Apache-2.0 license on GitHub | all rights reserved
+        </div>
+        <style>
+@media (max-width:700px) {
+    .copyright{
+        display: none;
+    }
+}
+        </style>
     </div>   
 </body>
 
