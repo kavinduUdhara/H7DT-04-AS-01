@@ -1,0 +1,123 @@
+.menu-bar-holder{
+    height: 100vh;
+    width: 0px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    z-index: 5;
+}
+
+.sub-menu-bar{
+    background-color: #ffffff66;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    padding: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    backdrop-filter: blur(20px);
+    z-index: 10;
+
+}
+
+.sub-menu-bar .menu-item{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.sub-menu-bar .menu-item:nth-child(1){
+    background-color: rgba(221, 221, 221, 0.3);
+}
+
+.sub-menu-bar .menu-item img{
+    width: 70%;
+}
+
+.sub-menu-bar .menu-item:hover{
+    background-color: rgba(234, 234, 234, 0.414);
+}
+
+.sub-menu-bar-item-names{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-left: 70px;
+}
+
+.sub-menu-bar-item-names .menu-item{
+    width: fit-content;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff66;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    backdrop-filter: blur(20px);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+    transform: translateX(-110px);
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+
+/*https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered*/
+body:has(.sub-menu-bar .menu-item:hover) .sub-menu-bar-item-names .menu-item {
+    opacity: 1;
+    transform: translateX(0px);
+    z-index: 6;
+  }
+
+
+@media (max-width:1300px) {
+    .top-sub-search-bar .search-bar{
+        width: 50%;
+    }
+
+}
+
+@media (max-width:990px) {
+    .top-sub-search-bar .search-bar{
+        width: 60%;
+    }
+}
+
+@media (max-width:770px) {
+    .top-sub-search-bar .search-bar{
+        width: 70%;
+    }
+}
+
+@media (max-width:550px) {
+    .top-sub-search-bar .search-bar{
+        width: 80%;
+    }
+}
+
+@media (max-width:440px) {
+    .top-sub-search-bar .search-bar{
+        width: 85%;
+    }
+}
+
+@media (max-width:400px) {
+    .top-sub-search-bar .search-bar{
+        width: 85%;
+    }
+}
