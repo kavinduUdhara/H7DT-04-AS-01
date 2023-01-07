@@ -1,6 +1,8 @@
 # H7DT-04-AS-01
 DESIGN A STATIC WEBSITE USING HTML AND CSS (THIS ASSIGNMENT IS INTENDED TO CHECKTHE KNOWLEDGE OF HTML AND CSS)
 
+## All Rights Reserved
+Copyright (c) 2023 KavinduUdhara. **All Rights Reserved**.
 
 ### Web Programming 01 – Design an e-commerce web application
 **“New Tech”** is a company that buys and sells quality **electronic items**. At present they are using
@@ -35,8 +37,3 @@ sliders when you design the above-mentioned pages
 - Do not use templates for your design. You have to make the design by yourself.
 - You can add more pagesfor the design if you want.
 - Students do not need to program for the backend process. Only the design is required.
-
-
-## All Rights Reserved
-
-Copyright (c) 2023 KavinduUdhara. All Rights Reserved.
