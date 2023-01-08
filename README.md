@@ -44,3 +44,28 @@ sliders when you design the above-mentioned pages
 - Do not use templates for your design. You have to make the design by yourself.
 - You can add more pagesfor the design if you want.
 - Students do not need to program for the backend process. Only the design is required.
+
+# project overview
+- A Customer Login and Registration page.
+
+![image](https://user-images.githubusercontent.com/88233364/211211630-a1027418-cb3a-4af8-87ed-3042c5b49df3.png)
+
+![image](https://user-images.githubusercontent.com/88233364/211211784-0fbc8cae-3fb8-4d68-b796-f52c49b7a1e6.png)
+
+- Home page
+
+![image](https://user-images.githubusercontent.com/88233364/211211813-34feb0ee-ef4a-40a0-a9bb-0323f704906e.png)
+
+![image](https://user-images.githubusercontent.com/88233364/211211850-d8980f4f-2842-4de4-b2c3-07f309858039.png)
+
+- Product listing and single product view.
+
+![image](https://user-images.githubusercontent.com/88233364/211211875-9c860e8b-43ba-418c-be10-987909d0718a.png)
+
+- Cart and Watchlist.
+- Purchased History and Invoicing.
+- Product adding and updating
+- Advanced search
+- Admin Sign in.
+- Admin Panel
+- Manage Products and Manage Users
