@@ -1,6 +1,7 @@
 :root {
     --normal-txt: 'Sans-serif', Arial;
     --menu-bar-itme-color: rgb(232, 232, 232);
+    --product_title-font-size: 30px;
 }
 
 body {
@@ -189,9 +190,10 @@ img {
 .product-detalis{
     background-color: #fff;
     width: 85%;
-    margin-top: 35px;
+    margin-top: 10px;
     border-radius: 20px;
     padding: 25px;
+    margin-bottom: 40px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; 
 }
 
@@ -200,8 +202,8 @@ img {
 }
 
 .product-detalis .product-name{
-    font-size: 30px;
-    padding-bottom: 5px;
+    font-size: var(--product_title-font-size);
+    padding-bottom: 20px;
 }
 
 .product-detalis .product-price{
@@ -248,4 +250,61 @@ img {
     height: 30px;
     margin-right: 5px;
     padding-left: 5px;
+}
+
+.product-otehr-detais{
+    width: 100%;
+}
+
+.product-otehr-detais .title{
+    margin: 0;
+    font-size: var(--product_title-font-size);
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.product-otehr-detais .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    column-gap: 50px;
+    row-gap: 30px;
+    place-items: center;
+    transition-duration: 1s;
+}
+
+.product-otehr-detais .grid .item{
+    background-color: rgb(224, 224, 224);
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 0 0;
+    place-items: unset;
+    padding-left: 5px;
+}
+
+.product-otehr-detais .grid .item div{
+    width: 160px;
+}
+
+.product-otehr-detais .grid .item div:nth-of-type(1){
+    grid-column: 1;
+    grid-row: 1 / 5;
+    width: 40px;
+    justify-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-otehr-detais .grid .item div:nth-of-type(1) img{
+    width: 70%;
+}
+
+.product-otehr-detais .grid .item div:nth-of-type(2){
+    font-size: 110%;
 }
