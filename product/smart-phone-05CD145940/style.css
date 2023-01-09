@@ -274,7 +274,7 @@ img {
 }
 
 .product-otehr-detais .grid .item{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(244, 244, 244);
     width: 200px;
     padding: 10px;
     border-radius: 10px;
@@ -307,4 +307,63 @@ img {
 
 .product-otehr-detais .grid .item div:nth-of-type(2){
     font-size: 110%;
+}
+
+.footer .holder{
+    width: 80%;
+    background-color: #fff;;
+}
+
+@media (max-width:950px) {
+    .product-item-view {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+    }
+
+    .product-item-view .left{
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+        height: fit-content;
+        background-position: center;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .product-item-view .right{
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+        margin-top: -40px;
+    }
+
+    .product-detalis{
+        background-color: #fff;
+        width: 85%;
+        margin-top: 10px;
+        border-radius: 20px;
+        padding: 25px;
+        margin-bottom: 40px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; 
+    }
+
+    .slideshow-container {
+        width: 60%;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-width:600px) {
+    .slideshow-container {
+        width: 80%;
+    }
+
 }
