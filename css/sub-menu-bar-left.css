@@ -6,6 +6,7 @@
     align-items: center;
     margin-left: 5px;
     z-index: 2;
+    transition-duration: 1s;
 }
 
 .sub-menu-bar{
@@ -75,8 +76,8 @@
     opacity: 0;
     transition-delay: 0.1s;
     visibility: hidden;
-    display: block;
     z-index: 0;
+    display: none;
 }
 
 @keyframes fadeIn {
@@ -88,6 +89,11 @@
          opacity: 1;
          visibility: visible;
          transform: translateX(0px);
+         -webkit-animation-play-state:paused;
+         -moz-animation-play-state:paused;
+         -o-animation-play-state:paused;
+         animation-play-state:paused;
+         cursor: pointer;
     }
 }
 
@@ -95,6 +101,7 @@
 body:has(.sub-menu-bar .menu-item:hover) .sub-menu-bar-item-names .menu-item {
     display: flex;
     animation: fadeIn 1s;
+    animation-iteration-count: 1;
   }
 
 
@@ -120,6 +127,10 @@ body:has(.sub-menu-bar .menu-item:hover) .sub-menu-bar-item-names .menu-item {
 @media (max-width:550px) {
     .top-sub-search-bar .search-bar{
         width: 80%;
+    }
+
+    .menu-bar-holder{
+        transform: scale(0.8);
     }
 }
 
