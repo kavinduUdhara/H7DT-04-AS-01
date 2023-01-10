@@ -68,6 +68,9 @@ sliders when you design the above-mentioned pages
 
 
 - Cart and Watchlist.
+
+![image](https://user-images.githubusercontent.com/88233364/211518963-e2f21327-0153-4b7a-8715-c2beb5cc9e58.png)
+
 - Purchased History and Invoicing.
 - Product adding and updating
 - Advanced search
