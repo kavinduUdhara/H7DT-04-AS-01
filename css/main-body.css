@@ -1,0 +1,56 @@
+:root {
+    --normal-txt: 'Sans-serif', Arial;
+    --menu-bar-itme-color: rgb(232, 232, 232);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--normal-txt);
+}
+
+.main-body{
+    min-height: 90vh;
+    background-image: url('../images/background-images/background_image_with_3d_shapes_blue_purple_website_u_0d77a8be-0a48-4482-aee1-950cdc9f2c16.png');
+    background-size: cover;
+    background-position-y: -30px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 60px 60px;
+    transition-duration: 1s;
+}
+
+.main-body .main-body-title{
+    width: 50%;
+    display: flex;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.449);
+    border-radius: 5px 60px 5px 60px;
+    backdrop-filter: blur(20px);
+    padding: 30px;
+}
+
+.main-body .main-body-title img{
+    width: 100px;
+}
+
+.main-body .main-body-title h1{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:550px) {
+    .main-body .main-body-title h1{
+        font-size: 30px;
+    }
+
+    .main-body .main-body-title img{
+        width: 50px;
+    }
+
+    .main-body{
+        min-height: 50vh;
+    }
+}

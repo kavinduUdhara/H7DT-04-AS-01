@@ -43,6 +43,7 @@
     grid-column: 1;
     grid-row: 1 / 5;
     overflow: hidden;
+    position: relative;
 }
 
 .item-list .item .item-image img{
@@ -198,7 +199,7 @@
     :root{
         --item-width_height: 300px;
     }
-    
+
     .main-body .main-body-title h1{
         font-size: 30px;
     }

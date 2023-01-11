@@ -57,3 +57,37 @@
 .top-sub-search-bar .search-bar .search-icon img{
     width: 90%;
 }
+
+@media (max-width:1300px) {
+    .top-sub-search-bar .search-bar{
+        width: 50%;
+    }
+}
+
+@media (max-width:990px) {
+    .top-sub-search-bar .search-bar{
+        width: 60%;
+    }
+}
+
+@media (max-width:550px) {
+    .top-sub-search-bar .search-bar{
+        width: 80%;
+    }
+}
+
+@media (max-width:440px) {
+    .top-sub-search-bar .search-bar{
+        width: 85%;
+    }
+}
+
+@media (max-width:400px) {
+    .top-sub-search-bar .search-bar{
+        width: 85%;
+    }
+
+    .sub-menu-bar-item-names .menu-item{
+        display: none;
+    }
+}
