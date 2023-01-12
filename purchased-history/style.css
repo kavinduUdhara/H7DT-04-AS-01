@@ -1,0 +1,50 @@
+.sub-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-view{
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    display: inline-grid;
+    column-gap: auto;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+.filter-view div{
+    justify-self: center;
+}
+
+.filter-view img{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+
+.filter-view select,input{
+    width: fit-content;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    transition-duration: 1s;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.pur-his{
+    width: 100%;
+}

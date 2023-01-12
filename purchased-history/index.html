@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/back-to-top-button.css">
+    <link rel="stylesheet" href="../css/scrool-bar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/top-sub-search-bar.css">
+    <link rel="stylesheet" href="../css/sub-menu-bar-left.css">
+    <link rel="stylesheet" href="../css/item-list-grid-view.css">
+    <link rel="stylesheet" href="../css/main-body.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../css/back-to-top-button.js"></script>
+    <link rel="icon" type="image/png" href="../images/logo-hero.png" />
+    <title>New Tech | quality electronic items</title>
+</head>
+
+<body>
+    <button class="move-to-top" onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="../images/svg/chevron-up-outline.svg" alt="move to top">
+    </button>
+    <div class="top-sub-search-bar">
+        <div class="search-bar">
+            <div class="input-f">
+                <input type="text" placeholder="search by keyword">
+            </div>
+            <div class="search-icon">
+                <img src="../images/svg/search-outline.svg" alt="search-outline">
+            </div>
+        </div>
+    </div>
+    <div class="menu-bar-holder">
+        <div class="sub-menu-bar">
+            <div class="menu-item" onclick="window.location.href='../'">
+                <img src="../images/logo-hero.png" alt="">
+            </div>
+            <!--
+            <div class="menu-item go-top-menu" onclick="topFunction()" id="">
+                <img src="../images/svg/extension-puzzle-outline.svg" alt="">
+            </div>-->
+            <div class="menu-item">
+                <img src="../images/svg/apps-outline.svg" alt="">
+            </div>
+            <hr width="100%" color="black">
+            <div class="menu-item">
+                <img src="../images/svg/cart-outline.svg" alt="">
+            </div>
+            <div class="menu-item">
+                <img src="../images/svg/log-in-outline.svg" alt="">
+            </div>
+        </div>
+        <div class="sub-menu-bar-item-names">
+            <div class="menu-item">Home page</div>
+            <!--<div class="menu-item go-top-menu" id="">go to the top</div>-->
+            <div class="menu-item">catogories</div>
+            <hr width="0" color="white" style="opacity: 0; visibility: hidden;">
+            <div class="menu-item">cart</div>
+            <div class="menu-item">log-in</div>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="main-body-title">
+            <img src="../images/svg/card-outline.svg" alt="">
+            <h1>Purchesed History </h1>
+        </div>
+    </div>
+    <div class="sub-body">
+        <div class="filter-view">
+            <div>
+                <img src="../images/svg/filter-outline.svg" alt="">
+            </div>
+            <div>
+                <select id="gender" name="gender">
+                    <option value="gender">Product Type</option>
+                    <option value="male">type 1</option>
+                    <option value="female">type 2</option>
+                    <option value="other">type 3</option>
+                </select>
+            </div>
+            <div>
+                <span>From: </span>
+                <input type="date" placeholder="from">
+            </div>
+            <div>
+                <span>To: </span>
+                <input type="date" placeholder="from">    
+            </div>
+            <div>
+                <select id="gender" name="gender">
+                    <option value="gender">Order By</option>
+                    <option value="male">Date</option>
+                    <option value="female">Order Id</option>
+                    <option value="other">product type + Date</option>
+                </select>
+            </div>
+        </div>
+        <div class="pur-his">
+            <div class="grid-view-1d4w">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="../images/items/smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy.png" alt="">
+                    </div>
+                    <div class="order-id">
+                        01ACF31397
+                    </div>
+                    <div class="order-date">10/01/2023</div>
+                    <div class="final-price">$50,300</div>
+                    <div class="qty">1</div>
+                    <div class="order-status">pending</div>
+                    <div class="more-info">
+                        <div class="color">color :  black</div>
+                    </div>
+                    <div class="action">
+                        <button>
+                            <img src="../images/svg/receipt-outline.svg" alt="receipt-outline">
+                            invoice
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="../images/items/smartwatch_47aa3c3e-86d8-488e-90d7-fe3bf60bbce7_copy.png" alt="">
+                    </div>
+                    <div class="order-id">
+                        012D172EDD
+                    </div>
+                    <div class="order-date">10/01/2023</div>
+                    <div class="final-price">$50,300</div>
+                    <div class="qty">1</div>
+                    <div class="order-status">pending</div>
+                    <div class="more-info">
+                        <div class="color">color :  black</div>
+                    </div>
+                    <div class="action">
+                        <button>
+                            <img src="../images/svg/receipt-outline.svg" alt="receipt-outline">
+                            invoice
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="../images/items/earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy.png" alt="">
+                    </div>
+                    <div class="order-id">
+                        0004C56181
+                    </div>
+                    <div class="order-date">10/01/2023</div>
+                    <div class="final-price">$50,300</div>
+                    <div class="qty">1</div>
+                    <div class="order-status">pending</div>
+                    <div class="more-info">
+                        <div class="color">color: black</div>
+                    </div>
+                    <div class="action">
+                        <button>
+                            <img src="../images/svg/receipt-outline.svg" alt="receipt-outline">
+                            invoice
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image">
+                        <img src="../images/items/laptop_adb3021b-2d8a-475f-a246-7f82c4f7d627_copy.png" alt="">
+                    </div>
+                    <div class="order-id">
+                        0253C351DE
+                    </div>
+                    <div class="order-date">10/01/2023</div>
+                    <div class="final-price">$50,300</div>
+                    <div class="qty">1</div>
+                    <div class="order-status">pending</div>
+                    <div class="more-info">
+                        <div class="color">color :  black</div>
+                    </div>
+                    <div class="action">
+                        <button>
+                            <img src="../images/svg/receipt-outline.svg" alt="receipt-outline">
+                            invoice
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
