@@ -83,5 +83,8 @@ sliders when you design the above-mentioned pages
 ![image](https://user-images.githubusercontent.com/88233364/212534028-8ba3e3ca-f415-43f3-b896-b1112be43e00.png)
 
 - Admin Sign in.
+
+![image](https://user-images.githubusercontent.com/88233364/212535281-ab490d9b-b8ac-49b4-998c-3c55fc38804e.png)
+
 - Admin Panel
 - Manage Products and Manage Users
