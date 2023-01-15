@@ -72,6 +72,11 @@ sliders when you design the above-mentioned pages
 ![image](https://user-images.githubusercontent.com/88233364/211518963-e2f21327-0153-4b7a-8715-c2beb5cc9e58.png)
 
 - Purchased History and Invoicing.
+
+![image](https://user-images.githubusercontent.com/88233364/212533976-4bab176e-e3d7-4499-b105-588264c1a867.png)
+
+![image](https://user-images.githubusercontent.com/88233364/212533991-d30d3089-251b-4fb5-9c65-53264b69d568.png)
+
 - Product adding and updating
 - Advanced search
 - Admin Sign in.
