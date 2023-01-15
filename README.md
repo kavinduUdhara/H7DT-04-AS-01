@@ -79,6 +79,9 @@ sliders when you design the above-mentioned pages
 
 - Product adding and updating
 - Advanced search
+
+![image](https://user-images.githubusercontent.com/88233364/212534028-8ba3e3ca-f415-43f3-b896-b1112be43e00.png)
+
 - Admin Sign in.
 - Admin Panel
 - Manage Products and Manage Users
