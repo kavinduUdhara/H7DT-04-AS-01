@@ -4,7 +4,7 @@ DESIGN A STATIC WEBSITE USING HTML AND CSS (THIS ASSIGNMENT IS INTENDED TO CHECK
 # All Rights Reserved
 Copyright (c) 2023 KavinduUdhara. **All Rights Reserved**.
 
-copyright? copy right: steal ideas, steal facts but **do not steal my codes** :) 
+copyright? copy right: steal ideas, steal facts but <ins> **do not steal my codes** </ins> :) 
 
 ### Rights of Images
 (cc) Midjourney
