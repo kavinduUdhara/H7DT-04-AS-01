@@ -155,6 +155,7 @@ body{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+    background: rgb(61, 203, 222);
     background: #555;
 }
 
