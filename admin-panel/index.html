@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/back-to-top-button.css">
+    <link rel="stylesheet" href="css/menu-bar-main.css">
+    <link rel="stylesheet" href="css/scrool-bar.css">
+    <link rel="stylesheet" href="css/items-grid-placeholder.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="css/back-to-top-button.js"></script>
+    <link rel="icon" type="image/png" href="images/logo-hero.png" />
+    <title>New Tech | quality electronic items</title>
+</head>
+
+<body>
+    <!--https://choosealicense.com/no-permission/-->
+    <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <!--https://stackoverflow.com/questions/27900053/css-transition-with-visibility-not-working-->
+    <button class="move-to-top" onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="images/svg/chevron-up-outline.svg" alt="move to top">
+    </button>
+    <div class="menu">
+        <div class="menu-logo" onclick="window.location.href='#'">
+            <img src="images/logo-hero.png" alt="logo">
+        </div>
+        <div class="menu-list">
+            <ul>
+                <li onclick="window.location.href='#what\'s-new'">what's_new</li>
+                <li onclick="window.location.href='#popular'">popular</li>
+                <li onclick="window.location.href='#categories'" class="drop-down">categories <img src="images/svg/chevron-down-outline.svg" alt=""></li>
+                <!--<li onclick="window.location.href='#about'">About</li>-->
+            </ul>
+        </div>
+        <!--
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          -->
+        <div class="space">
+
+        </div>
+        <div class="menu-f-icons">
+            <div class="f-icon">
+                <img src="images/svg/cart-outline.svg" alt="">
+            </div>
+            <div class="f-icon">
+                <img src="images/svg/search-outline.svg" alt="">
+            </div>
+            <div class="f-icon">
+                <img src="images/svg/log-in-outline.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="main-body">
+        <!--code from - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/slideshow/banner_for_electronic_items_selling_center_tv_loudspeak_176f7c90-af07-424f-9a14-833cd5958325copy.png"
+                    style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/slideshow/banner_for_electronic_items_selling_center_robot_headph_8272e278-a3a7-4dd6-8aac-ffaec7d78f06copy.png"
+                    style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/slideshow/banner_for_electronic_items_selling_center_tv_loudspeak_03e0865a-f69b-4bc0-87b5-674db94eadb9-edit.png"
+                    style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            <div class="dot-containser">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </div>
+    </div>
+    <div class="whats-new" id="what's-new">
+        <div class="title">
+            <img src="images/svg/extension-puzzle-outline.svg" alt="">
+            <h1>What's new</h1>
+        </div>
+        <div class="placeholder">
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy.png" alt="smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy">
+                </div>
+                <div class="item-name">smart phone</div>
+                <div class="item-price">$50,000</div>
+                <div class="action">
+                    <button>
+                        <img src="images/svg/cart-outline.svg" alt="">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">earbuds</div>
+                <div class="item-price">$50,000</div>
+                <div class="action">
+                    <button>
+                        <img src="images/svg/cart-outline.svg" alt="">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/laptop_adb3021b-2d8a-475f-a246-7f82c4f7d627_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">laptop</div>
+                <div class="item-price">$50,000</div>
+                <div class="action">
+                    <button>
+                        <img src="images/svg/cart-outline.svg" alt="">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/smartwatch_47aa3c3e-86d8-488e-90d7-fe3bf60bbce7_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">smart watch</div>
+                <div class="item-price">$50,000</div>
+                <div class="action">
+                    <button>
+                        <img src="images/svg/cart-outline.svg" alt="">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/table_lamp_9ce4063c-bfe5-4996-aa2e-fa95dcd9f575_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">table lamp</div>
+                <div class="item-price">$50,000</div>
+                <div class="action">
+                    <button>
+                        <img src="images/svg/cart-outline.svg" alt="">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popular" id="popular">
+        <div class="title">
+            <img src="images/svg/analytics-outline.svg" alt="">
+            <h1>popular</h1>
+        </div>
+        <div class="placeholder">
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy.png" alt="smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy">
+                </div>
+                <div class="item-name">smart phone</div>
+                <div class="item-price">$50,000</div>
+                <div class="action">
+                    <button>
+                        <img src="images/svg/cart-outline.svg" alt="">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">earbuds</div>
+                <div class="item-price">$50,000</div>
+                <div class="action">
+                    <button>
+                        <img src="images/svg/cart-outline.svg" alt="">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/laptop_adb3021b-2d8a-475f-a246-7f82c4f7d627_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">laptop</div>
+                <div class="item-price">$50,000</div>
+                <div class="action">
+                    <button>
+                        <img src="images/svg/cart-outline.svg" alt="">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/smartwatch_47aa3c3e-86d8-488e-90d7-fe3bf60bbce7_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">smart watch</div>
+                <div class="item-price">$50,000</div>
+                <div class="action">
+                    <button>
+                        <img src="images/svg/cart-outline.svg" alt="">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/camera_d61caa5e-186a-40b5-9a77-3bdd2583b21a_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">CCTV camera</div>
+                <div class="item-price">$50,000</div>
+                <div class="action">
+                    <button>
+                        <img src="images/svg/cart-outline.svg" alt="">
+                        add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="categories" id="categories">
+        <div class="title">
+            <img src="images/svg/apps-outline.svg" alt="">
+            <h1>categories</h1>
+        </div>
+        <div class="placeholder1">
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy.png" alt="smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy">
+                </div>
+                <div class="item-name">mobile devices</div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/real_fridge_7452149b-5a5c-4837-97ec-8a18365ba466_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">Appliances & White Goods</div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/laptop_adb3021b-2d8a-475f-a246-7f82c4f7d627_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">Laptops, Tablets, Computers</div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="images/items/smartwatch_47aa3c3e-86d8-488e-90d7-fe3bf60bbce7_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                </div>
+                <div class="item-name">Wearables</div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe" id="subscribe">
+        <div class="title">
+            <img src="images/svg/chatbox-ellipses-outline.svg" alt="">
+            <h1>Never miss a beat</h1>
+        </div>
+        <div class="holder">
+            <input type="email" placeholder="email">
+            <button>subscribe</button>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="title">
+            <img src="images/svg/footsteps-outline.svg" alt="">
+            <h1>footer</h1>
+        </div>
+        <div class="holder">
+            <div class="grid">
+                <div>Shipping options</div>
+                <div>Tracking a package</div>
+                <div>Country availability</div>
+                <div>Repairs</div>
+                <div>Installation</div>
+                <div>Ideas & Info</div>
+                <div>Help Center</div>
+                <div>Contact Us</div>
+                <div>Financing</div>
+                <div>Device recycling</div>
+                <div>Sustainability</div>
+                <div>Gift returns</div>
+                <div>Refurbished</div>
+                <div>Trade-in</div>
+                <div>Locations</div>
+            </div>
+            <hr>
+            <div class="s-media_other">
+                <div class="s-media">
+                    <img src="images/svg/social-media/logo-facebook.svg" alt="">
+                    <img src="images/svg/social-media/logo-instagram.svg" alt="">
+                    <img src="images/svg/social-media/logo-youtube.svg" alt="">
+                    <img src="images/svg/social-media/logo-tiktok.svg" alt="">
+                </div>
+                <div style="width: inherit;"></div>
+                <div class="other">Terms & conditions</div>
+            </div>
+        </div>
+    </div>    
+    <div class="copyright" style="text-align: center; position: fixed;bottom: 0px; background-color: rgba(255, 255, 255, 0.482); padding: 5px; border-radius: 5px 5px 0 0;backdrop-filter: blur(20px);">
+        copyright? copy right: steal ideas, steal facts but do not steal my codes :) 
+        <br> (c) 2023 KavinduUdhara | all rights reserved | <a href="https://github.com/kavinduUdhara/H7DT-04-AS-01/blob/main/LICENSE.md#rights-of-images" target="_blank"> for rights of images and more</a>
+    </div>
+    <style>
+.copyright a{
+color: black;
+}
+@media (max-width:700px) {
+.copyright{
+    display: none;
+}
+}
+    </style>
+</body>
+
+</html>
