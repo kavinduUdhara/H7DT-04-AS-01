@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/back-to-top-button.css">
+    <link rel="stylesheet" href="../css/scrool-bar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/top-sub-search-bar-with-meu-button.css">
+    <link rel="stylesheet" href="../css/sub-menu-bar-left.css">
+    <link rel="stylesheet" href="../css/item-list-grid-view.css">
+    <link rel="stylesheet" href="../css/main-body.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../css/back-to-top-button.js"></script>
+    <link rel="icon" type="image/png" href="../images/logo-hero.png" />
+    <title>New Tech | quality electronic items</title>
+</head>
+
+<body>
+    <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+    <!--https://stackoverflow.com/questions/27900053/css-transition-with-visibility-not-working-->
+    <button class="move-to-top" onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="../images/svg/chevron-up-outline.svg" alt="move to top">
+    </button>
+    <div class="top-sub-search-bar">
+        <div class="search-bar">
+            <div class="input-f">
+                <input type="text" placeholder="search by keyword">
+            </div>
+            <div class="search-icon">
+                <img src="../images/svg/search-outline.svg" alt="search-outline">
+            </div>
+            <div class="menu-bar">
+                <img src="../images/svg/menu-outline.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="body-002">
+        <div class="left">
+            <div class="title">
+                <img src="../images/svg/filter-outline.svg" alt="">
+                <h1>Filter Items</h1>
+            </div>
+            <div class="filter-items">
+                <div class="item">
+                    <span>From: </span>
+                    <input type="number" placeholder="$ min price">
+                </div>
+                <div class="item">
+                    <span>To : </span>
+                    <input type="number" placeholder="$ high price">
+                </div>
+                <div class="item">
+                    <select id="product-category" name="product-category">
+                        <option value="title">product category</option>
+                        <option value="mobile devices">mobile devices</option>
+                        <option value="Appliances & White Goods">Appliances & White Goods</option>
+                        <option value="Laptops, Tablets, Computers">Laptops, Tablets, Computers</option>
+                        <option value="Wearables">Wearables</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <select id="order-by" name="order-by">
+                        <option value="title">Order By</option>
+                        <option value="date">price</option>
+                        <option value="option-2">option 2</option>
+                        <option value="product-type_Date">product type + Date</option>
+                    </select>
+                </div>
+            </div>
+            <div class="action">
+                <button>
+                    <img src="../images/svg/filter-outline.svg" alt="">
+                    Filter
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="data-holder">
+                <div class="item-list">
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="../images/items/smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy.png" alt="smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy">
+                        </div>
+                        <div class="item-name">smart phone</div>
+                        <div class="item-dis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ab veniam aspernatur, quisquam cum libero, nulla commodi eligendi aliquid, debitis accusamus distinctio porro dolor ipsa est id assumenda. Voluptatem, veniam?</div>
+                        <div class="item-price">$50,000</div>
+                        <div class="action">
+                            <button>
+                                <img src="../images/svg/cart-outline.svg" alt="">
+                                add to cart
+                            </button>
+                            <button onclick="window.location.href='../product/smart-phone-05CD145940/'">
+                                <img src="../images/svg/open-outline.svg" alt="">
+                            </button>
+                            <div class="title">view more details</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="../images/items/earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                        </div>
+                        <div class="item-name">earbuds</div>
+                        <div class="item-dis">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="item-price">$50,000</div>
+                        <div class="action">
+                            <button onclick="window.location.href='../'">
+                                <img src="../images/svg/cart-outline.svg" alt="">
+                                add to cart
+                            </button>
+                            <button>
+                                <img src="../images/svg/open-outline.svg" alt="">
+                            </button>
+                            <div class="title">view more details</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="../images/items/laptop_adb3021b-2d8a-475f-a246-7f82c4f7d627_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                        </div>
+                        <div class="item-name">laptop</div>
+                        <div class="item-dis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ab veniam aspernatur, quisquam cum libero, nulla commodi eligendi aliquid, debitis accusamus distinctio porro dolor ipsa est id assumenda. Voluptatem, veniam?</div>
+                        <div class="item-price">$50,000</div>
+                        <div class="action">
+                            <button>
+                                <img src="../images/svg/cart-outline.svg" alt="">
+                                add to cart
+                            </button>
+                            <button>
+                                <img src="../images/svg/open-outline.svg" alt="">
+                            </button>
+                            <div class="title">view more details</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="../images/items/smartwatch_47aa3c3e-86d8-488e-90d7-fe3bf60bbce7_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                        </div>
+                        <div class="item-name">smart watch</div>
+                        <div class="item-dis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ab veniam aspernatur, quisquam cum libero, nulla commodi eligendi aliquid, debitis accusamus distinctio porro dolor ipsa est id assumenda. Voluptatem, veniam?</div>
+                        <div class="item-price">$50,000</div>
+                        <div class="action">
+                            <button>
+                                <img src="../images/svg/cart-outline.svg" alt="">
+                                add to cart
+                            </button>
+                            <button>
+                                <img src="../images/svg/open-outline.svg" alt="">
+                            </button>
+                            <div class="title">view more details</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="../images/items/table_lamp_9ce4063c-bfe5-4996-aa2e-fa95dcd9f575_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                        </div>
+                        <div class="item-name">table lamp</div>
+                        <div class="item-dis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ab veniam aspernatur, quisquam cum libero, nulla commodi eligendi aliquid, debitis accusamus distinctio porro dolor ipsa est id assumenda. Voluptatem, veniam?</div>
+                        <div class="item-price">$50,000</div>
+                        <div class="action">
+                            <button>
+                                <img src="../images/svg/cart-outline.svg" alt="">
+                                add to cart
+                            </button>
+                            <button>
+                                <img src="../images/svg/open-outline.svg" alt="">
+                            </button>
+                            <div class="title">view more details</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
