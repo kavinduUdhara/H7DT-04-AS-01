@@ -99,4 +99,11 @@ sliders when you design the above-mentioned pages
 ![image](https://user-images.githubusercontent.com/88233364/212535281-ab490d9b-b8ac-49b4-998c-3c55fc38804e.png)
 
 - Admin Panel
+
+![image](https://user-images.githubusercontent.com/88233364/212612218-89a9b5cf-10ce-46cb-90aa-aa716e45b456.png)
+
+![image](https://user-images.githubusercontent.com/88233364/212612271-6a70dafd-358b-4e1f-bf02-142c548643c1.png)
+
+![image](https://user-images.githubusercontent.com/88233364/212612320-4de3ace6-8526-4b4e-9391-22c7cfc2f5ce.png)
+
 - Manage Products and Manage Users
