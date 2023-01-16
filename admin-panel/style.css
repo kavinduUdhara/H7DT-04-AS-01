@@ -22,6 +22,91 @@ body {
     font-family: var(--normal-txt);
 }
 
+.pop-up{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.258);
+    z-index: 6;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+}
+
+.pop-up .pop-up-placeholder{
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.66);
+    height: 70vh;
+    margin-top: 15vh;
+    border-radius: 20px;
+    overflow: auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    backdrop-filter: blur(50px);
+    padding: 30px;
+    padding-top: 50px;
+}
+
+.product-more-detalis{
+    width: 100%;
+}
+
+.product-more-detalis .product-image_name-dis{
+    display: flex;
+}
+
+.product-more-detalis .product-image_name-dis .product-image{
+    width: 40%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+.product-more-detalis .product-image_name-dis .product-image img{
+    width: 60%;
+    border-radius: 20px;
+}
+
+.product-more-detalis .product-image_name-dis .product-name_dis{
+    width: 60%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-more-detalis .product-image_name-dis .product-name{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-more-detalis .product-image_name-dis .product-dis{
+    padding-right: 80px;
+}
+
+.product-more-detalis .prices{
+    width: 100%;
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.product-more-detalis .prices .final-price{
+    padding: 0;
+}
+
+.product-more-detalis .prices .title{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product-more-detalis .prices .value{
+    text-align: right;
+}
+
 .main-body {
     width: 100%;
     background-image: url('../images/background_image_with_3d_shapes_blue_purple.png');
@@ -103,6 +188,23 @@ body {
  .popular .act-placeholder{
     width: 90%;
     margin-bottom: 50px;
+}
+
+.popular .action button{
+    padding: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border: 3px solid rgb(49, 8, 56);
+    background-color: rgba(255, 255, 255, 0.232);
+    color: rgb(49, 8, 56);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    display: inline-flex;
+    align-items: center;
+    transform: translateY(50%);
 }
 
 .act-items{
@@ -216,47 +318,38 @@ body {
 
 .categories .placeholder1{
     width: 90%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-columns: repeat(auto-fill, minmax(var(--cat-item-width), 1fr));
-    row-gap: 20px;
-    margin-bottom: 100px;
 }
 
 .categories .placeholder1 .item{
-    width: var(--cat-item-width);
-    background-color: rgb(238, 238, 238);
-    display: flex;
+    display: inline-flex;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 10px;
     align-items: center;
-    height: var(--cat-item-height);
-    place-self: center;
-    border-radius: 20px;
-    overflow: hidden;
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-}
-
-.categories .placeholder1 .item:hover img{
-    transform: scale(1.2);
-
 }
 
 .categories .placeholder1 .item .item-image{
-    width: 174px;
-    height: 130px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
     overflow: hidden;
+    margin-right: 10px;
 }
 
-.categories .placeholder1 .item img{
-    width: var(--cat-item-height);
-    height: var(--cat-item-height);
-    transition: transform .5s ease;
+.categories .placeholder1 .item .item-image img{
+    width: 40px;
+    height: 40px;
 }
 
-.categories .placeholder1 .item-name{
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
+.categories .placeholder1 .item .item-dis{  
+    margin-left: auto;  
+}
+
+.categories .placeholder1 .item .space{
 }
 
 .subscribe {

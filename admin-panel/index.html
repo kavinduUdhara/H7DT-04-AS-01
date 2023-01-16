@@ -18,6 +18,35 @@
 </head>
 
 <body>
+    <div class="pop-up">
+        <div class="pop-up-placeholder">
+            <div class="product-more-detalis">
+                <div class="product-image_name-dis">
+                    <div class="product-image">
+                        <img src="../images/items/real_fridge_7452149b-5a5c-4837-97ec-8a18365ba466_copy.png" alt="fridge_7452149b-5a5c-4837-97ec-8a18365ba466_copy">
+                    </div>
+                    <div class="product-name_dis">
+                        <div class="product-name">Fridge - 20.2</div>
+                        <div class="product-dis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellat quas, ut atque repudiandae sed fugiat voluptatum ex architecto quam temporibus reiciendis illum quis autem, facilis ducimus cupiditate praesentium perspiciatis!</div>
+                    </div>
+                </div>
+                <div class="prices">
+                    <div class="final-price">
+                        <div class="title">Final Price</div>
+                        <div class="value">$1000</div>
+                    </div>
+                    <div class="discount">
+                        <div class="title">discount</div>
+                        <div class="value">0%</div>
+                    </div>
+                    <div class="after-discount">
+                        <div class="title">After discount</div>
+                        <div class="value">$1000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--https://choosealicense.com/no-permission/-->
     <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
     <!--https://stackoverflow.com/questions/27900053/css-transition-with-visibility-not-working-->
@@ -32,7 +61,8 @@
             <ul>
                 <li onclick="window.location.href='#analytics'">analytics</li>
                 <li onclick="window.location.href='#activities'">activities</li>
-                <li onclick="window.location.href='#popular'">products</li>
+                <li onclick="window.location.href='#products'">products</li>
+                <li onclick="window.location.href='#users'">users</li>
                 <!-- <li onclick="window.location.href='#categories'" class="drop-down">categories <img src="images/svg/chevron-down-outline.svg" alt=""></li> -->
                 <!--<li onclick="window.location.href='#about'">About</li>-->
             </ul>
@@ -192,40 +222,45 @@
                 </div>
             </div>
         </div>
+        <div class="action">
+            <button>load more</button>
+        </div>
     </div>
-    <div class="categories" id="categories">
+    <div class="categories products" id="products">
         <div class="title">
             <img src="../images/svg/bag-outline.svg" alt="">
             <h1>products</h1>
         </div>
         <div class="placeholder1">
-            <div class="item">
-                <div class="item-image">
-                    <img src="images/items/smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy.png" alt="smartphone_b2d077ca-ff43-47d9-ae64-256084130155_copy">
+            <div class="itms">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="../images/items/real_fridge_7452149b-5a5c-4837-97ec-8a18365ba466_copy.png" alt="">
+                    </div>
+                    <div class="item-name">Fridge - 20.2</div>
+                    <div class="space"></div>
+                    <div class="item-dis">Sold Out</div>
                 </div>
-                <div class="item-name">mobile devices</div>
-            </div>
-            <div class="item">
-                <div class="item-image">
-                    <img src="images/items/real_fridge_7452149b-5a5c-4837-97ec-8a18365ba466_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="../images/items/earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy.png" alt="">
+                    </div>
+                    <div class="item-name">earbuds_e5cdec99</div>
+                    <div class="space"></div>
+                    <div class="item-dis">6/10 are sold out</div>
                 </div>
-                <div class="item-name">Appliances & White Goods</div>
-            </div>
-            <div class="item">
-                <div class="item-image">
-                    <img src="images/items/laptop_adb3021b-2d8a-475f-a246-7f82c4f7d627_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
+                <div class="item">
+                    <div class="item-image">
+                        <img src="../images/items/camera_d61caa5e-186a-40b5-9a77-3bdd2583b21a_copy.png" alt="">
+                    </div>
+                    <div class="item-name">CCTV camera - camera_d61caa5e</div>
+                    <div class="space"></div>
+                    <div class="item-dis">Sold Out</div>
                 </div>
-                <div class="item-name">Laptops, Tablets, Computers</div>
-            </div>
-            <div class="item">
-                <div class="item-image">
-                    <img src="images/items/smartwatch_47aa3c3e-86d8-488e-90d7-fe3bf60bbce7_copy.png" alt="earbuds_e5cdec99-2b01-4869-938e-a8e46697642a_copy">
-                </div>
-                <div class="item-name">Wearables</div>
             </div>
         </div>
     </div>
-    <div class="subscribe" id="subscribe">
+    <!-- <div class="subscribe" id="subscribe">
         <div class="title">
             <img src="images/svg/chatbox-ellipses-outline.svg" alt="">
             <h1>Never miss a beat</h1>
@@ -234,10 +269,10 @@
             <input type="email" placeholder="email">
             <button>subscribe</button>
         </div>
-    </div>
+    </div> -->
     <div class="footer" id="footer">
         <div class="title">
-            <img src="images/svg/footsteps-outline.svg" alt="">
+            <img src="../images/svg/footsteps-outline.svg" alt="">
             <h1>footer</h1>
         </div>
         <div class="holder">
@@ -261,10 +296,10 @@
             <hr>
             <div class="s-media_other">
                 <div class="s-media">
-                    <img src="images/svg/social-media/logo-facebook.svg" alt="">
-                    <img src="images/svg/social-media/logo-instagram.svg" alt="">
-                    <img src="images/svg/social-media/logo-youtube.svg" alt="">
-                    <img src="images/svg/social-media/logo-tiktok.svg" alt="">
+                    <img src="../images/svg/social-media/logo-facebook.svg" alt="">
+                    <img src="../images/svg/social-media/logo-instagram.svg" alt="">
+                    <img src="../images/svg/social-media/logo-youtube.svg" alt="">
+                    <img src="../images/svg/social-media/logo-tiktok.svg" alt="">
                 </div>
                 <div style="width: inherit;"></div>
                 <div class="other">Terms & conditions</div>
