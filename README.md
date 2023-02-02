@@ -58,6 +58,22 @@ sliders when you design the above-mentioned pages
 - Students do not need to program for the backend process. Only the design is required.
 
 # project overview
+
+As a software developer, I was tasked with designing a static website for New Tech, a company that buys and sells quality electronic items. The purpose of this project was to demonstrate my knowledge of HTML and CSS. (according to the project)
+
+New Tech had been using a customer care service to order items over the phone but at their Annual General Meeting held on 20th January 2022, they decided to expand their selling rates and develop a fully functional e-commerce web application. They called for tenders from software development companies and my company was selected for the project.
+
+The website was designed using HTML, CSS, Bootstrap, and JavaScript. I had to make the design from scratch, without using templates, and I was free to add extra pages if needed. The focus was on the frontend design and I did not have to program for the backend process.
+
+The website had to include a customer login and registration page, a home page, product listing and single product view, a cart and watchlist, purchased history and invoicing, product adding and updating, advanced search, admin sign in, and an admin panel to manage products and users. I made use of input fields, dropdowns, buttons, checkboxes, radio buttons, navbars and sliders to enhance the functionality of the website.
+
+One of the challenges I faced during the development of this project was with CSS animations. I had to spend a lot of time researching and finding answers on Stack Overflow. However, I was able to overcome these obstacles and deliver a fully functional website that met the requirements of New Tech.
+
+This project not only helped me to improve my HTML and CSS skills but also provided me with a practical application of the technologies that I had learned. I am proud of my achievement and look forward to taking on similar projects in the future.
+
+special thank to Manula Hansaka mudunkotuwa for editing images for the project.
+
+
 - A Customer Login and Registration page.
 
 ![image](https://user-images.githubusercontent.com/88233364/211211630-a1027418-cb3a-4af8-87ed-3042c5b49df3.png)
