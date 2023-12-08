@@ -2,7 +2,8 @@
 DESIGN A STATIC WEBSITE USING HTML AND CSS (THIS ASSIGNMENT IS INTENDED TO CHECKTHE KNOWLEDGE OF HTML AND CSS)
 
 website hosted on Google Firebase: https://h7dt-04-as-01.web.app/
-website published with GitHub Pages: 
+website published with GitHub Pages: https://kavinduudhara.github.io/H7DT-04-AS-01/
+website hosted to custom domain with GitHub Pages: https://www.h7dt-04-as-01.edubrain.app/
 
 # All Rights Reserved
 Copyright (c) 2023 KavinduUdhara. **All Rights Reserved**.
